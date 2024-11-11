@@ -5,13 +5,13 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="wrapper">
-        <motion.span 
+        <motion.h1 
           initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1.5 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
           Full Stack Developer
-        </motion.span>
+        </motion.h1>
         <div className="social">
           <a href="#"><img src='facebook.png' alt='facebook' /></a>
           <a href="#"><img src='instagram.png' alt='instagram' /></a>
