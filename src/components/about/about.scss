@@ -1,0 +1,22 @@
+.slidingLogosContainer {
+  margin-top: 60px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 250px; /* Ajusta según tu diseño */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .slidingBar {
+    display: flex;
+    gap: 20px; /* Espaciado entre logos */
+    width: fit-content;
+  }
+  
+  .logo {
+    width: 100px; /* Ajusta el tamaño según tu diseño */
+    height: 100px;
+  }
+  
