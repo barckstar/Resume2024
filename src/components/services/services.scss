@@ -1,0 +1,66 @@
+.servicios {
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #1a1a1a, #000000);
+    color: white;
+    text-align: center;
+  
+    h2 {
+      font-size: 40px;
+      font-weight: bold;
+      color: rebeccapurple;
+      letter-spacing: 5px;
+      margin-bottom: 40px;
+    }
+  
+    .serviciosGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .servicioCard {
+      background: #2a2a2a;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+  
+      h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: rebeccapurple;
+      }
+  
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        color: #ccc;
+      }
+  
+      .price {
+        font-size: 20px;
+        font-weight: bold;
+        color: rebeccapurple;
+        margin-bottom: 20px;
+      }
+  
+      .contactButton {
+        padding: 10px 20px;
+        background: rebeccapurple;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+  
+      }
+    }
+  }

@@ -1,0 +1,74 @@
+.about {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #1a1a1a, #000000);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+
+  .textContainer {
+    max-width: 800px;
+    text-align: center;
+    color: white;
+
+    h2 {
+      font-size: 40px;
+      font-weight: bold;
+      color: rebeccapurple;
+      letter-spacing: 5px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      font-weight: 300;
+      margin-bottom: 20px;
+
+      strong {
+        color: rebeccapurple;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .slidingLogosContainer {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    white-space: nowrap;
+    display: flex;
+    gap: 20px;
+
+    .slidingLogos {
+      display: flex;
+      gap: 20px;
+      animation: slide 20s linear infinite;
+
+      img {
+        height: 50px;
+        width: auto;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+
+        &:hover {
+          filter: grayscale(0%);
+        }
+      }
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
