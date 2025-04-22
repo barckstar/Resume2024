@@ -35,7 +35,6 @@ const App = () => {
       <section id="Services">
         <Servicios/>
       </section>
-      <section id="Donation">Portafolio</section>
       <section id="Contact">
         <ContactForm/>
       </section>

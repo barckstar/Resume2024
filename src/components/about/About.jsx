@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "./about.scss";
 
 const logos = [
-  "./techLogos/Amazon Web Services_dark.svg",
+  "/techLogos/Amazon Web Services_dark.svg",
   "/techLogos/angular.svg",
   "/techLogos/azure.svg",
   "/techLogos/bootstrap.svg",

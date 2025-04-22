@@ -1,43 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./WorkExp.scss";
-
-const experiences = [
-  {
-    id: 1,
-    title: "Freelancer - Desarrollador Frontend",
-    date: "Oct 2023 - Actualidad",
-    description: [
-      "Liderazgo de proyectos desde la concepción hasta la implementación.",
-      "Comunicación constante con los clientes para garantizar que se cumplan sus expectativas.",
-      "Colaboración efectiva con equipos multidisciplinarios para lograr resultados óptimos.",
-      "Proyectos destacados:",
-      "- Estampida CR: Desarrollo y lanzamiento de un sitio web para una empresa de estampados, utilizando React y Vite.",
-      "- MAS Contractors: Creación de un sitio web profesional para una empresa de construcción, utilizando Next.js y Tailwind CSS.",
-    ],
-  },
-  {
-    id: 2,
-    title: "Geotecnologías S.A. - Analista Programador Junior",
-    date: "Oct 2022 - Oct 2023",
-    description: [
-      "Resolución de problemas y mejoras en la API REST de la empresa.",
-      "Desarrollo de un nuevo sistema que integra Esri y ArcGIS utilizando C#.",
-      "Creación de informes utilizando jgreport e integración de bibliotecas para mejorar el rendimiento del sistema.",
-    ],
-  },
-  {
-    id: 3,
-    title: "Nea:Coding - Desarrollador Junior",
-    date: "Abr 2022 - Sep 2022",
-    description: [
-      "Diseño y desarrollo de software para clientes, adaptándome a sus necesidades específicas.",
-      "Aprendizaje rápido de nuevas tecnologías y metodologías para cumplir con los objetivos del proyecto.",
-    ],
-  },
-];
+import data from "../../data/data.json"; 
 
 const WorkExp = () => {
+  const { experiences } = data;
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleNext = () => {
