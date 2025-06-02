@@ -7,14 +7,6 @@ const WorkExp = () => {
   const { experiences } = data;
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleNext = () => {
-    setActiveIndex((prev) => (prev + 1) % experiences.length);
-  };
-
-  const handlePrev = () => {
-    setActiveIndex((prev) => (prev - 1 + experiences.length) % experiences.length);
-  };
-
   return (
     <section className="workExp">
       <motion.h2
@@ -25,7 +17,6 @@ const WorkExp = () => {
         Experiencia Laboral
       </motion.h2>
 
-      {/* Línea de tiempo */}
       <div className="timeline">
         {experiences.map((exp, index) => (
           <div
@@ -39,13 +30,6 @@ const WorkExp = () => {
         ))}
       </div>
 
-      {/* Controles de navegación */}
-      <div className="controls">
-        <button onClick={handlePrev}>Anterior</button>
-        <button onClick={handleNext}>Siguiente</button>
-      </div>
-
-      {/* Tarjeta de descripción */}
       <motion.div
         className="descriptionCard"
         initial={{ opacity: 0, y: 50 }}
@@ -56,7 +40,7 @@ const WorkExp = () => {
         <p className="date">{experiences[activeIndex].date}</p>
         <ul>
           {experiences[activeIndex].description.map((item, index) => (
-            <li key={index}>{item}</li>
+            <p key={index}>{item}</p>
           ))}
         </ul>
       </motion.div>

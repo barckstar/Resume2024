@@ -7,7 +7,7 @@ const ServiceCard = ({ service, index }) => {
 
   const handleHoverStart = () => {
     setIsHovered(true);
-    setRandomRotation(Math.floor(Math.random() * 21) - 10);
+    setRandomRotation(Math.floor(Math.random() * 21) - 12);
   };
 
   const handleHoverEnd = () => {
@@ -23,7 +23,7 @@ const ServiceCard = ({ service, index }) => {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       onHoverStart={handleHoverStart}
       onHoverEnd={handleHoverEnd}
-      animate={{ scale: isHovered ? 1.3 : 1, 
+      animate={{ scale: isHovered ? 1.1 : 1, 
         rotate: isHovered ? randomRotation : 0,
         boxShadow: isHovered
         ? "0px 10px 30px rgba(128, 0, 128, 0.2)"

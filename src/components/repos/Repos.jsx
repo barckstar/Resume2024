@@ -28,30 +28,20 @@ const Repos = () => {
   }, []);
 
   const categorizeRepos = (repos) => {
-    const categories = {
-      cursos: [],
-      websites: [],
-      pruebasTecnicas: [],
-      playgrounds: [],
-      otros: [],
-    };
+    return repos.reduce(
+      (categories, repo) => {
+        if (!repo.topics || repo.topics.length === 0) return categories;
 
-    repos.forEach((repo) => {
-      if (repo.topics && repo.topics.length > 0) {
-        if (repo.topics.includes("course")) {
-          categories.cursos.push(repo);
-        } else if (repo.topics.includes("website")) {
-          categories.websites.push(repo);
-        } else if (repo.topics.includes("playground")) {
-          categories.playgrounds.push(repo);
-        } else {
-          categories.otros.push(repo);
-        }
-      } else {
-        categories.otros.push(repo);
-      }
-    });
-    return categories;
+        repo.topics.forEach((topic) => {
+          if (topic === "course") categories.cursos.push(repo);
+          if (topic === "website") categories.websites.push(repo);
+          if (topic === "playground") categories.playgrounds.push(repo);
+        });
+
+        return categories;
+      },
+      { cursos: [], websites: [], playgrounds: [] }
+    );
   };
 
   const { cursos, websites, playgrounds } = categorizeRepos(repos);

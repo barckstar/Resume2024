@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import data from "../../../data/data.json"; 
 
 const variants = {
     open:{
@@ -27,25 +28,18 @@ const itemVariants = {
 
 
 const Links = () => {
-     const items = [
-        "Homepage",
-        "Services",
-        "Protafolio",
-        "About",
-        "Donation",
-        "Contact",
-     ]
+    const { sidebarLinks } = data;
 
   return (
     <motion.div className="links" variants={variants}>
-        {items.map(item => (            
-            <motion.a href={`#${item}`} 
-                key={item} 
+        {sidebarLinks.map(link => (            
+            <motion.a href={`#${link.title}`} 
+                key={link.id} 
                 variants={itemVariants}
                 whileHover={{scale:1.1}}
                 whileTap={{scale:0.95}}
                 >
-                    {item}
+                    {link.title}
             </motion.a>
         ))}
     </motion.div>

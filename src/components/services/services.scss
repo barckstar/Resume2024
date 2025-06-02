@@ -1,66 +1,178 @@
 .servicios {
-    padding: 80px 20px;
-    background: linear-gradient(180deg, #1a1a1a, #000000);
-    color: white;
-    text-align: center;
-  
-    h2 {
-      font-size: 40px;
-      font-weight: bold;
-      color: rebeccapurple;
-      letter-spacing: 5px;
-      margin-bottom: 40px;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #1a1a1a, #000000);
+  color: white;
+  text-align: center;
+
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rebeccapurple;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+      letter-spacing: 3px;
     }
-  
-    .serviciosGrid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
+
+    @media (max-width: 500px) {
+      font-size: 24px;
     }
-  
-    .servicioCard {
+  }
+
+  .serviciosGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    /* Espacio para evitar superposición con los logos */
+
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .paginationButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    button {
+      padding: 10px 20px;
       background: #2a2a2a;
-      border-radius: 10px;
-      padding: 20px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 100;
+      transition: background 0.3s ease;
+
       &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        background: rebeccapurple;
       }
-  
-      h3 {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 10px;
-        color: rebeccapurple;
-      }
-  
-      p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-        color: #ccc;
-      }
-  
-      .price {
-        font-size: 20px;
-        font-weight: bold;
-        color: rebeccapurple;
-        margin-bottom: 20px;
-      }
-  
-      .contactButton {
-        padding: 10px 20px;
+
+      &.active {
         background: rebeccapurple;
         color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-  
       }
     }
   }
+
+  .servicioCard {
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: rebeccapurple;
+
+      @media (max-width: 570px) {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #ccc;
+
+      @media (max-width: 570px) {
+        font-size: 14px;
+      }
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: rebeccapurple;
+      margin-bottom: 20px;
+
+      @media (max-width: 570px) {
+        font-size: 18px;
+      }
+    }
+
+    .contactButton {
+      padding: 10px 20px;
+      background: rebeccapurple;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: #6a0dad;
+      }
+
+      @media (max-width: 570px) {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .slidingLogosContainer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 100;
+
+    .slidingLogos {
+      display: flex;
+      gap: 20px;
+
+      img {
+        height: 75px;
+        width: auto;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+
+        &:hover {
+          filter: grayscale(0%);
+        }
+
+        @media (max-width: 768px) {
+          height: 40px;
+        }
+
+        @media (max-width: 480px) {
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  @keyframes slide {
+    20% {
+      transform: translateX(100%);
+      /* Empieza fuera de la pantalla por la derecha */
+    }
+
+    50% {
+      transform: translateX(-100%);
+      /* Termina fuera de la pantalla por la izquierda */
+    }
+
+    100% {
+      transform: translateX(100%);
+      /* Regresa al inicio */
+    }
+  }
+}

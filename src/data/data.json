@@ -1,4 +1,26 @@
 {
+    "aboutInfo":[
+        {
+            "id" : 1,
+            "description" : "<h2>¡Hola! Soy Leonel Castro González</h2>"
+        },
+        {
+            "id" : 2,
+            "description" : "Un desarrollador de software apasionado por crear soluciones tecnológicas que marcan la diferencia. Con una sólida formación en ingeniería de sistemas y experiencia en el desarrollo de aplicaciones web y APIs, me especializo en el uso de tecnologías como <strong>React</strong>, <strong>Next.js</strong>, <strong>.NET</strong>, y <strong>SQL Server</strong> para construir productos escalables y eficientes."
+        },
+        {
+            "id" : 3,
+            "description" : "Mi enfoque se centra en la colaboración efectiva y la resolución de problemas. Disfruto trabajar en equipo, donde puedo combinar mis habilidades técnicas con mi capacidad para comunicarme claramente y adaptarme a los desafíos del proyecto. He liderado proyectos desde la concepción hasta la implementación, como <strong>estampidacr.com</strong> y <strong>MAS Contractors</strong>, este último desarrollado con <strong>Next.js</strong> y <strong>Tailwind CSS</strong> para ofrecer una experiencia de usuario moderna y profesional."
+        },
+        {
+            "id" : 4,
+            "description" : "Me apasiona aprender y mantenerme al día con las últimas tendencias tecnológicas. Siempre estoy buscando oportunidades para crecer profesionalmente y enfrentar nuevos retos que me permitan expandir mis habilidades y contribuir al éxito de proyectos innovadores."
+        },
+        {
+            "id" : 5,
+            "description" : "Si estás buscando un desarrollador comprometido y con una mentalidad orientada a resultados, ¡no dudes en contactarme! Estoy emocionado por la posibilidad de colaborar en tu próximo proyecto."
+        }
+    ],
     "servicios": [
         {
             "id": 1,
@@ -59,7 +81,6 @@
                 "Aunque no fui responsable de la integración inicial de Esri y ArcGIS, trabajé extensamente con sus APIs, autenticando JWTs y realizando llamados para obtener información crítica. Este proceso me permitió profundizar en el ecosistema de Esri y adaptarme rápidamente a las tecnologías utilizadas en la empresa.",
                 "Mi enfoque en la eficiencia y la resolución de problemas me permitió no solo cumplir con mis tareas de manera oportuna, sino también apoyar a mis compañeros en momentos de alta carga de trabajo. Esto ayudó a reducir significativamente la sobrecarga del equipo y a avanzar el proyecto hacia su siguiente etapa. Mi capacidad para implementar soluciones optimizadas, como el uso de expresiones Lambda y LINQ en C#, fue reconocida por mis supervisores, quienes valoraron mi enfoque orientado a la eficiencia.",
                 "Esta experiencia no solo fortaleció mis habilidades técnicas, como la implementación de seguridad en APIs REST mediante JWT, sino que también me enseñó a colaborar efectivamente con compañeros que tenían estilos de trabajo diferentes al mío. Aprendí a adaptarme a nuevas tecnologías y metodologías, lo que me permitió contribuir de manera significativa al éxito del equipo y del proyecto."
-                
             ]
         },
         {
@@ -74,6 +95,170 @@
                 "Uno de los momentos más gratificantes de esta experiencia fue cuando mi código fue revisado por un arquitecto con más de 45 años de experiencia en programación. El código, que debía cumplir con un 95% de cobertura en pruebas, utilizar inyección de dependencias y validar todas las entradas y salidas, pasó la revisión sin necesidad de correcciones. Este reconocimiento fue un hito en mi carrera, demostrando que mi esfuerzo y dedicación habían dado frutos.",
                 "Esta experiencia no solo fortaleció mis habilidades técnicas, sino que también me enseñó la importancia de la disciplina, el aprendizaje continuo y la búsqueda de la excelencia en cada tarea. Fue un período de crecimiento acelerado que sentó las bases para mi desarrollo profesional."
             ]
+        }
+    ],
+    "sidebarLinks": [
+        {
+            "id": 1,
+            "title": "Homepage"
+        },
+        {
+            "id": 2,
+            "title": "Services"
+        },
+        {
+            "id": 3,
+            "title": "Protafolio"
+        },
+        {
+            "id": 4,
+            "title": "About"
+        },
+        {
+            "id": 5,
+            "title": "Donation"
+        },
+        {
+            "id": 6,
+            "title": "Contact"
+        }
+    ],
+    "logos": [
+        {
+            "id": 1,
+            "img": "/techLogos/Amazon Web Services_dark.svg"
+        },
+        {
+            "id": 2,
+            "img": "/techLogos/angular.svg"
+        },
+        {
+            "id": 3,
+            "img": "/techLogos/azure.svg"
+        },
+        {
+            "id": 4,
+            "img": "/techLogos/bootstrap.svg"
+        },
+        {
+            "id": 5,
+            "img": "/techLogos/cloudflare.svg"
+        },
+        {
+            "id": 6,
+            "img": "/techLogos/csharp.svg"
+        },
+        {
+            "id": 7,
+            "img": "/techLogos/css_old.svg"
+        },
+        {
+            "id": 8,
+            "img": "/techLogos/figma.svg"
+        },
+        {
+            "id": 9,
+            "img": "/techLogos/firebase.svg"
+        },
+        {
+            "id": 10,
+            "img": "/techLogos/Github_dark.svg"
+        },
+        {
+            "id": 11,
+            "img": "/techLogos/gitlab.svg"
+        },
+        {
+            "id": 12,
+            "img": "/techLogos/Google_Colaboratory.svg"
+        },
+        {
+            "id": 13,
+            "img": "/techLogos/jwt.svg"
+        },
+        {
+            "id": 14,
+            "img": "/techLogos/kotlin.svg"
+        },
+        {
+            "id": 15,
+            "img": "/techLogos/mysql.svg"
+        },
+        {
+            "id": 16,
+            "img": "/techLogos/netlify.svg"
+        },
+        {
+            "id": 17,
+            "img": "/techLogos/nextjs_icon_dark.svg"
+        },
+        {
+            "id": 18,
+            "img": "/techLogos/nodejs.svg"
+        },
+        {
+            "id": 19,
+            "img": "/techLogos/Php_dark.svg"
+        },
+        {
+            "id": 20,
+            "img": "/techLogos/postman.svg"
+        },
+        {
+            "id": 21,
+            "img": "/techLogos/python.svg"
+        },
+        {
+            "id": 22,
+            "img": "/techLogos/react.svg"
+        },
+        {
+            "id": 23,
+            "img": "/techLogos/sqlite.svg"
+        },
+        {
+            "id": 24,
+            "img": "/techLogos/sql-server.svg"
+        },
+        {
+            "id": 25,
+            "img": "/techLogos/stripe.svg"
+        },
+        {
+            "id": 26,
+            "img": "/techLogos/swagger.svg"
+        },
+        {
+            "id": 27,
+            "img": "/techLogos/tailwindcss.svg"
+        },
+        {
+            "id": 28,
+            "img": "/techLogos/typescript.svg"
+        },
+        {
+            "id": 29,
+            "img": "/techLogos/Unity_dark.svg"
+        },
+        {
+            "id": 30,
+            "img": "/techLogos/Vercel_dark.svg"
+        },
+        {
+            "id": 31,
+            "img": "/techLogos/visual-studio.svg"
+        },
+        {
+            "id": 32,
+            "img": "/techLogos/vitejs.svg"
+        },
+        {
+            "id": 33,
+            "img": "/techLogos/vscode.svg"
+        },
+        {
+            "id": 34,
+            "img": "/techLogos/wordpress.svg"
         }
     ]
 }
